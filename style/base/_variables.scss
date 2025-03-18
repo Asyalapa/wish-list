@@ -1,0 +1,23 @@
+$font-family: "Montserrat", sans-serif;
+
+// Цвета | Colors
+$primery-color: #afcaba;
+$title-color: #333333;
+$bg-card-color: #fad0b9;
+$bg-color: #f9f0e1;
+$btn-color: #e2f5ec;
+$btn-hover-color: #70b0b1;
+
+// Размеры шрифтов | Font sizes
+$font-size-primary: calc(24 / 16 * 1rem);
+$font-size-secondary: calc(14 / 16 * 1rem);
+
+// Размеры отступов | Spacing
+$spacing-lg: calc(20 / 16 * 1rem);
+$spacing-md: calc(12 / 16 * 1rem);
+
+// Размеры макета | Layout
+$xs-width: 320px;
+$mobile-width: 375px;
+$tablet-width: 768px;
+$desktop-width: 1440px;

@@ -1,0 +1,12 @@
+{
+  "name": "wish-list",
+  "version": "1.0.0",
+  "description": "**Wishlist Website** — это одностраничный сайт, позволяющий создавать список желаемых подарков для людей на праздники. Дарители могут выбрать подарок, указав своё имя, или внести вклад в его покупку.",
+  "main": "script.js",
+  "scripts": {
+    "style": "sass --watch style/style.scss style/base/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
