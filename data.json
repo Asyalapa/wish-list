@@ -1,0 +1,90 @@
+{
+  "celebrants": [
+    {
+      "name": "Анна",
+      "age": 25,
+      "gender": "женский",
+      "avatar": "",
+      "gifts": [
+        {
+          "title": "Умные часы",
+          "description": "Важно: поддержка iOS и Android, пульсометр. Не важно: цвет.",
+          "price": "15000 руб.",
+          "photo": "",
+          "link": "https://example.com/smartwatch"
+        },
+        {
+          "title": "Книга 'Искусство программирования'",
+          "description": "Важно: новое издание. Не важно: язык перевода.",
+          "price": "5000 руб.",
+          "photo": "",
+          "link": "https://example.com/book"
+        },
+        {
+          "title": "Беспроводные наушники",
+          "description": "Важно: шумоподавление, время работы от батареи. Не важно: цвет.",
+          "price": "8000 руб.",
+          "photo": "",
+          "link": "https://example.com/headphones"
+        },
+        {
+          "title": "Подарочный сертификат в SPA",
+          "description": "Важно: сертификат на 2 персоны. Не важно: конкретный салон.",
+          "price": "10000 руб.",
+          "photo": "",
+          "link": "https://example.com/spa"
+        },
+        {
+          "title": "Набор для творчества",
+          "description": "Важно: акварельные краски и кисти. Не важно: бренд.",
+          "price": "3000 руб.",
+          "photo": "",
+          "link": "https://example.com/art"
+        }
+      ]
+    },
+    {
+      "name": "Иван",
+      "age": 30,
+      "gender": "мужской",
+      "avatar": "",
+      "gifts": [
+        {
+          "title": "Игровая консоль",
+          "description": "Важно: поддержка 4K, объем памяти. Не важно: цвет.",
+          "price": "40000 руб.",
+          "photo": "",
+          "link": "https://example.com/console"
+        },
+        {
+          "title": "Набор инструментов",
+          "description": "Важно: качество материалов, комплектация. Не важно: бренд.",
+          "price": "12000 руб.",
+          "photo": "",
+          "link": "https://example.com/tools"
+        },
+        {
+          "title": "Фитнес-браслет",
+          "description": "Важно: пульсометр, водонепроницаемость. Не важно: цвет.",
+          "price": "6000 руб.",
+          "photo": "",
+          "link": "https://example.com/fitness"
+        },
+        {
+          "title": "Подарочный сертификат в ресторан",
+          "description": "Важно: сертификат на 2 персоны. Не важно: конкретный ресторан.",
+          "price": "5000 руб.",
+          "photo": "",
+          "link": "https://example.com/restaurant"
+        },
+        {
+          "title": "Кожаный кошелек",
+          "description": "Важно: натуральная кожа, минималистичный дизайн. Не важно: цвет.",
+          "price": "7000 руб.",
+          "photo": "",
+          "link": "https://example.com/wallet"
+        }
+      ]
+    }
+  ]
+}

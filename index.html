@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список пожеланий</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__content">
+      <h1 class="header__title">Список пожеланий</h1>
+      <div class="header__toggle">
+        <label class="toggle">
+          <input class="toggle__input" type="checkbox" id="layoutToggle" checked>
+          <span class="toggle__slider"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container" id="mainContainer">
+      <!-- Контейнеры для поздравляемых будут добавлены сюда динамически -->
+    </div>
+  </main>
+
+    <!-- Модальное окно для подарка -->
+  <article id="giftModal" class="modal">
+    <div class="modal__content">
+      <span class="modal__close">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <form id="giftForm">
+        <div id="amountField" style="display: none;">
+          <label for="amount">Сумма:</label>
+          <input type="number" id="amount" name="amount" required>
+        </div>
+        <label for="name">ФИО дарителя:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Подтвердить</button>
+      </form>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <p class="footer__text">
+        Этот список — не приказ, а дружеская подсказка! 😊 Мы будем счастливы видеть вас и без подарков (просто любовь к вам может стать… чуточку условной 😆). А если всё же решите порадовать — помните: цены в магазине могут слегка отличаться от тех, что видел составитель списка. Да и ссылки — это всего лишь примеры, так что можно проявить фантазию! 🎁✨
+      </p>
+      <div class="footer__copyright">
+        <span>© 2025</span>
+        <a href="https://t.me/Asyalapa" target="_blank" rel="noopener noreferrer">Анастасия Макарова</a>
+        <span> - идея, дизайн и реализация данного приложения.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
