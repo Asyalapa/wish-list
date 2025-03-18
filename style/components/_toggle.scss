@@ -1,0 +1,78 @@
+@use "../base/variables" as *;
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: calc(42 / 16 * 1rem);
+  height: calc(26 / 16 * 1rem);
+
+  @media (max-width: $tablet-width) {
+    width: calc(38 / 16 * 1rem);
+    height: calc(20 / 16 * 1rem);
+  }
+
+  @media (max-width: $xs-width) {
+    height: calc(24 / 16 * 1rem);
+  }
+
+  &__input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  &__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $bg-card-color;
+    transition: 0.4s;
+    border-radius: calc(26 / 16 * 1rem);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+
+    @media (max-width: $tablet-width) {
+      border-radius: calc(20 / 16 * 1rem);
+    }
+  
+    @media (max-width: $xs-width) {
+      border-radius: calc(24 / 16 * 1rem);
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: calc(20 / 16 * 1rem);
+      width: calc(20 / 16 * 1rem);
+      left: calc(3 / 16 * 1rem);
+      bottom: calc(3 / 16 * 1rem);
+      background-color: $btn-color;
+      transition: 0.4s;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+      @media (max-width: $tablet-width) {
+        height: calc(16 / 16 * 1rem);
+        width: calc(16 / 16 * 1rem);
+        bottom: calc(2 / 16 * 1rem);
+      }
+    
+      @media (max-width: $xs-width) {
+        height: calc(18 / 16 * 1rem);
+        bottom: calc(3 / 16 * 1rem);
+      }
+    }
+  }
+
+  &__input:checked + &__slider {
+    background-color: $btn-hover-color;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.05);
+
+    &:before {
+      transform: translateX(calc(16 / 16 * 1rem));
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

@@ -1,88 +1,242 @@
 {
   "celebrants": [
     {
-      "name": "Анна",
-      "age": 25,
-      "gender": "женский",
-      "avatar": "",
+      "name": "Денис",
+      "age": 6,
+      "gender": "мужской",
+      "avatar": "./images/02.png",
       "gifts": [
         {
-          "title": "Умные часы",
-          "description": "Важно: поддержка iOS и Android, пульсометр. Не важно: цвет.",
-          "price": "15000 руб.",
-          "photo": "",
-          "link": "https://example.com/smartwatch"
+          "title": "Подарочный детский набор 'Солнечная система' Геодом",
+          "description": "Познавательный набор для детей, который поможет изучить планеты солнечной системы в игровой форме.",
+          "price": "1257",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/89019721/detail.aspx"
         },
         {
-          "title": "Книга 'Искусство программирования'",
-          "description": "Важно: новое издание. Не важно: язык перевода.",
-          "price": "5000 руб.",
-          "photo": "",
-          "link": "https://example.com/book"
+          "title": "Мольберт-этюдник с набором для рисования WiMi",
+          "description": "Компактный мольберт с набором художественных принадлежностей для юных художников.",
+          "price": "2261",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/247200301/detail.aspx"
         },
         {
-          "title": "Беспроводные наушники",
-          "description": "Важно: шумоподавление, время работы от батареи. Не важно: цвет.",
-          "price": "8000 руб.",
-          "photo": "",
-          "link": "https://example.com/headphones"
+          "title": "Набор конструкторов для создания роботов 20 в 1 Seller and Buyer",
+          "description": "Увлекательный набор для сборки 20 различных роботов, развивающий логику и воображение.",
+          "price": "1494",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/217309958/detail.aspx"
         },
         {
-          "title": "Подарочный сертификат в SPA",
-          "description": "Важно: сертификат на 2 персоны. Не важно: конкретный салон.",
-          "price": "10000 руб.",
-          "photo": "",
-          "link": "https://example.com/spa"
+          "title": "Алмазная мозаика для детей 'Картина в рамке' ИП Попова",
+          "description": "Творческий набор для создания яркой картины с алмазной мозаикой, уже оформленной в рамку.",
+          "price": "429",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/261687738/detail.aspx"
         },
         {
-          "title": "Набор для творчества",
-          "description": "Важно: акварельные краски и кисти. Не важно: бренд.",
-          "price": "3000 руб.",
-          "photo": "",
-          "link": "https://example.com/art"
+          "title": "Роликовые коньки раздвижные Rainbow Reaction",
+          "description": "Яркие раздвижные ролики с удобной фиксацией, идеально подойдут для активного отдыха.",
+          "price": "4443",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/209127862/detail.aspx"
+        },
+        {
+          "title": "Набор для творчества 'Леденцовая фабрика'",
+          "description": "Захватывающий набор для создания настоящих леденцов своими руками.",
+          "price": "958",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/177623395/detail.aspx"
+        },
+        {
+          "title": "Набор для творчества 'Таба Сквиш лапка' из силикона Electronicshop",
+          "description": "Оригинальный набор для создания мягкого сквиша в форме лапки из силикона.",
+          "price": "683",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/321924655/detail.aspx"
+        },
+        {
+          "title": "Мяч волейбольный, размер 5, диаметр 22 см City-Ride",
+          "description": "Качественный волейбольный мяч для активных игр на улице и в спортзале.",
+          "price": "716",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/233056026/detail.aspx"
+        },
+        {
+          "title": "Балансборд с лабиринтом для детей и взрослых ExtraBoard",
+          "description": "Развивающий балансборд с лабиринтом, который помогает улучшить координацию и равновесие.",
+          "price": "1485",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/241685155/detail.aspx"
+        },
+        {
+          "title": "Человек-паук фигурка интерактивная Time4Game",
+          "description": "Фигурка Человека-паука с интерактивными функциями для захватывающей игры.",
+          "price": "511",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/362482431/detail.aspx"
+        },
+        {
+          "title": "Фигурка Халк игрушка супергерои Marvel Time4Game",
+          "description": "Фигурка Халка с подвижными элементами для игры и коллекционирования.",
+          "price": "982",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/224267761/detail.aspx"
+        },
+        {
+          "title": "Робот-трансформер 'Оптимус Прайм' Outletology",
+          "description": "Фигурка легендарного трансформера Оптимуса Прайма, которая превращается в грузовик.",
+          "price": "2353",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/253154537/detail.aspx"
+        },
+        {
+          "title": "Робот-трансформер 'Бамблби' и машинка Камаро 2 в 1 Outletology",
+          "description": "Фигурка трансформера Бамблби, который превращается в стильный автомобиль Камаро.",
+          "price": "1793",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/185354106/detail.aspx"
+        },
+        {
+          "title": "Светящаяся алмазная мозаика 30х40 без подрамника Razvi-Toy",
+          "description": "Красочная алмазная мозаика, которая светится в темноте, создавая эффектный вид.",
+          "price": "669",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/311201963/detail.aspx"
+        },
+        {
+          "title": "Фигурки игрушки 'Супергерои Мстители' Marvel Флэш toysbaby",
+          "description": "Набор фигурок популярных супергероев из вселенной Marvel для коллекционирования и игр.",
+          "price": "499",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/166665105/detail.aspx"
         }
       ]
     },
     {
-      "name": "Иван",
-      "age": 30,
+      "name": "Глеб",
+      "age": 2,
       "gender": "мужской",
-      "avatar": "",
+      "avatar": "./images/01.png",
       "gifts": [
         {
-          "title": "Игровая консоль",
-          "description": "Важно: поддержка 4K, объем памяти. Не важно: цвет.",
-          "price": "40000 руб.",
-          "photo": "",
-          "link": "https://example.com/console"
+          "title": "Баскетбол для ванны",
+          "description": "Активная игра для детей БУДУ ИГРАТЬ.",
+          "price": "315",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/181670222/detail.aspx"
         },
         {
-          "title": "Набор инструментов",
-          "description": "Важно: качество материалов, комплектация. Не важно: бренд.",
-          "price": "12000 руб.",
-          "photo": "",
-          "link": "https://example.com/tools"
+          "title": "Пластилиновая картинка BabyGames",
+          "description": "Набор для лепки и творчества с пластилином.",
+          "price": "363",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/239333265/detail.aspx"
         },
         {
-          "title": "Фитнес-браслет",
-          "description": "Важно: пульсометр, водонепроницаемость. Не важно: цвет.",
-          "price": "6000 руб.",
-          "photo": "",
-          "link": "https://example.com/fitness"
+          "title": "Футбольный мини-мяч Bebi Bum",
+          "description": "Игровой мини-мяч для детей, подходит для активных игр.",
+          "price": "367",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/155418873/detail.aspx"
         },
         {
-          "title": "Подарочный сертификат в ресторан",
-          "description": "Важно: сертификат на 2 персоны. Не важно: конкретный ресторан.",
-          "price": "5000 руб.",
-          "photo": "",
-          "link": "https://example.com/restaurant"
+          "title": "Кинетический песок (3 кг)",
+          "description": "Умный песок с коробкой-песочницей Genio kids.",
+          "price": "570",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/245219516/detail.aspx"
         },
         {
-          "title": "Кожаный кошелек",
-          "description": "Важно: натуральная кожа, минималистичный дизайн. Не важно: цвет.",
-          "price": "7000 руб.",
-          "photo": "",
-          "link": "https://example.com/wallet"
+          "title": "Набор для песочницы (18 предметов)",
+          "description": "Игровой набор с лейкой для песочницы.",
+          "price": "606",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/229259602/detail.aspx"
+        },
+        {
+          "title": "Магнитный планшет MAG",
+          "description": "Магнитный планшет доска - развивающая игрушка для детей.",
+          "price": "616",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/35690188/detail.aspx"
+        },
+        {
+          "title": "Набор для песочницы с самосвалом (6 предметов)",
+          "description": "Игровой песочный набор с машинкой-самосвалом.",
+          "price": "666",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/334591692/detail.aspx"
+        },
+        {
+          "title": "Магнитная рыбалка FergoKids",
+          "description": "Игрушка для ванной и купания, развивающая ловкость.",
+          "price": "707",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/216425376/detail.aspx"
+        },
+        {
+          "title": "Набор машинок In heart",
+          "description": "Набор игрушечных машинок для мальчиков и девочек.",
+          "price": "882",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/226801022/detail.aspx"
+        },
+        {
+          "title": "Кораблик для ванной",
+          "description": "Игрушка Паром с машинками для водных игр.",
+          "price": "1038",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/323080930/detail.aspx"
+        },
+        {
+          "title": "Сортер деревянный куб 4 в 1",
+          "description": "Монтессори-игра для малышей от бренда Бала.",
+          "price": "1073",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/172824820/detail.aspx"
+        },
+        {
+          "title": "Деревянные кубики, конструктор",
+          "description": "Деревянные кубики для творчества и конструирования.",
+          "price": "1467",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/49308900/detail.aspx"
+        },
+        {
+          "title": "Детский музыкальный набор",
+          "description": "Набор с барабаном и ксилофоном для юных музыкантов.",
+          "price": "1726",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/309331691/detail.aspx"
+        },
+        {
+          "title": "Говорящая музыкальная книга",
+          "description": "Нажималка Цвета BertToys - обучающая музыкальная книга.",
+          "price": "2685",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/145284640/detail.aspx"
+        },
+        {
+          "title": "Башня помощника Монтессори",
+          "description": "Растущий стул для самостоятельности ребенка.",
+          "price": "2751",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/322371205/detail.aspx"
+        },
+        {
+          "title": "Деревянные кубики 100 шт. Tooky Toy",
+          "description": "Большой набор деревянных кубиков для игр и развития.",
+          "price": "3088",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/138132922/detail.aspx"
+        },
+        {
+          "title": "Детская шведская стенка",
+          "description": "ЛАЙТ с фиксированным турником от TURNIK.COM.",
+          "price": "7596",
+          "photo": "./images/gift.webp",
+          "link": "https://wildberries.ru/catalog/213473203/detail.aspx"
         }
       ]
     }

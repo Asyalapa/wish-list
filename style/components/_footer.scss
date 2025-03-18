@@ -1,0 +1,43 @@
+@use '../base/variables' as *;
+
+.footer {
+  padding: $spacing-md $spacing-lg;
+  width: 100%;
+  border-top: 1px solid $btn-hover-color;
+  text-align: justify;
+
+  &__content {
+    max-width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-size: $font-size-secondary;
+    font-weight: 600;
+    color: $title-color;
+    line-height: 1.6;
+    margin-bottom: $spacing-md;
+
+    @media (max-width: $mobile-width) {
+      font-size: calc(12 / 16 * 1rem);
+    }
+  }
+
+  &__copyright {
+    font-size: calc(12 / 16 * 1rem);
+    color: $btn-hover-color;
+    text-align: center;
+    @media (max-width: $mobile-width) {
+      font-size: calc(10 / 16 * 1rem);
+    }
+
+    a {
+      color: $title-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
