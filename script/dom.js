@@ -91,24 +91,25 @@ function createGiftsBlock(gifts, index) {
  * @returns {HTMLElement} - Созданный элемент подарка.
  */
 export function createGiftElement(gift, index) {
-  const giftBlock = createElement('div', ['gift'], { 'data-price': gift.price });
+  const giftBlock = createElement('article', ['gift'], { 'data-price': gift.price });
 
   const giftPhoto = createElement('img', ['gift__photo'], { src: gift.photo, alt: gift.title });
   const giftInfo = createElement('div', ['gift__info']);
+  const gitfText = createElement('div', ['gift__info-text']);
+  const giftButtons = createElement('div', ['gift__buttons']);
 
-  giftInfo.append(
+
+  gitfText.append(
     createElement('h3', ['gift__title'], {}, gift.title),
     createElement('p', ['gift__description'], {}, gift.description),
     createElement('a', ['gift__link'], { href: gift.link, target: '_blank' }, 'Похожий товар')
   );
-
-  const giftButtons = createElement('div', ['gift__buttons']);
   giftButtons.append(
     createButton('Подарить подарок', () => openModal(gift, index, false), gift.isFullyPaid || gift.isSelected),
     createButton('Вложиться в подарок', () => openModal(gift, index, true), gift.isFullyPaid || gift.isSelected)
   );
 
-  giftInfo.appendChild(giftButtons);
+  giftInfo.append(gitfText, giftButtons);
   giftBlock.append(giftPhoto, giftInfo);
 
   return giftBlock;
@@ -129,7 +130,7 @@ export function createFilters() {
   controls.classList.add('controls');
 
   const filterSelect = document.createElement('select');
-  filterSelect.id = 'filterSelect';
+  filterSelect.classList.add('filter-select');
   filterSelect.innerHTML = `
     <option value="">Все</option>
     <option value="below500">До ₽500 </option>
@@ -140,7 +141,7 @@ export function createFilters() {
   filterSelect.addEventListener('change', (event) => handleFilterChange(event));
 
   const sortSelect = document.createElement('select');
-  sortSelect.id = 'sortSelect';
+  sortSelect.classList.add('sort-select');
   sortSelect.innerHTML = `
     <option value="asc">По возрастанию</option>
     <option value="desc">По убыванию</option>

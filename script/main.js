@@ -1,5 +1,5 @@
 import { fetchData } from './api.js';
-import { createCelebrantBlock, createFilters } from './dom.js';
+import { createCelebrantBlock } from './dom.js';
 import { initEventListeners } from './events.js';
 import { applyGiftColors } from './helpers.js';
 

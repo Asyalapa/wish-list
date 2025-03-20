@@ -3,8 +3,8 @@
 .celebrant {
   border: 1px solid $btn-hover-color;
   border-radius: 8px;
-  flex: 1 1 calc(50% - 20px); /* Для параллельного отображения */
-
+  flex: 1;
+ 
   &__info {
     display: flex;
     flex-direction: column;
@@ -12,11 +12,10 @@
     padding: 20px;
     gap: 20px;
     background: 
-    radial-gradient(circle at top left, #f9f0e1, #f3e0c9 40%, #eacdaa 70%, #e3b98d), /* Основной тёплый градиент */
-    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 60%), /* Световой блик */
-    linear-gradient(135deg, rgba(112, 176, 177, 0.6), rgba(255, 255, 255, 0) 60%), /* Бирюзовый слой */
-    conic-gradient(from 45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25% 50%, rgba(255, 255, 255, 0.15) 50% 75%, rgba(0, 0, 0, 0) 75%); /* Текстура */
-  
+      radial-gradient(circle at top left, #f9f0e1, #f3e0c9 40%, #eacdaa 70%, #e3b98d), /* Основной тёплый градиент */
+      radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 60%), /* Световой блик */
+      linear-gradient(135deg, rgba(112, 176, 177, 0.6), rgba(255, 255, 255, 0) 60%), /* Бирюзовый слой */
+      conic-gradient(from 45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25% 50%, rgba(255, 255, 255, 0.15) 50% 75%, rgba(0, 0, 0, 0) 75%); /* Текстура */
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px 8px 0 0;
   }
@@ -25,10 +24,10 @@
     font-size: 24px;
     margin: 0;
     text-transform: uppercase;
-    color: #4a8081; // Темнее #70b0b1
-    font-weight: 800; // Усилили выразительность текста
-    letter-spacing: 1px; // Легкое разрежение букв для четкости
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15); // Добавлен мягкий объемный эффект
+    color: #4a8081;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
   }
 
   &__avatar {
