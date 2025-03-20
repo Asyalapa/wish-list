@@ -1,11 +1,13 @@
 .main {
   padding: calc(20 / 16 * 1rem);
+  width: 100%;
 }
 
 .container {
   display: flex;
   gap: calc(20 / 16 * 1rem);
   height: 100%;
+  width: 100%;
   align-items: stretch;
 
   &.parallel {
