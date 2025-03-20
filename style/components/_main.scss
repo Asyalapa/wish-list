@@ -10,10 +10,11 @@
 
   &.parallel {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   &.sequential {
     flex-direction: column;
+    width: 100%;
   }
 }
