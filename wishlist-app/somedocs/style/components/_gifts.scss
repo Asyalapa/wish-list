@@ -25,12 +25,21 @@
     flex-direction: column;
     align-items: center;
   }
+  @container (max-width: 155px) {
+    gap: 5px;
+    padding: 2px;
+  }
 
   &__photo {
     width: 100px;
     height: 100px;
     object-fit: cover;
     border-radius: 8px;
+
+    @container (max-width: 155px) {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   &__info {
@@ -49,6 +58,10 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    
+    @container (max-width: 155px) {
+      gap: 5px;
+    }
   }
 
   &__title {
@@ -62,12 +75,29 @@
     @container (max-width: 410px) {
       text-align: center;
     }
+    @container (max-width: 250px) {
+      font-size: 16px;
+    }
+    @container (max-width: 195px) {
+      font-size: 12px;
+    }
+    @container (max-width: 155px) {
+      font-size: 10px;
+      letter-spacing: normal;
+    }
   }
 
   &__description {
     font-size: 14px;
     color: $title-color;
     font-weight: 500;
+
+    @container (max-width: 250px) {
+      font-size: 12px;
+    }
+    @container (max-width: 195px) {
+      font-size: 8px;
+    }
   }
 
   &__link {
@@ -78,6 +108,13 @@
 
     @container (max-width: 410px) {
       text-align: center;
+    }
+
+    @container (max-width: 250px) {
+      font-size: 12px;
+    }
+    @container (max-width: 195px) {
+      font-size: 8px;
     }
 
     &:hover {
@@ -99,6 +136,9 @@
     }
     @container (max-width: 410px) {
       flex-direction: column;
+    }
+    @container (max-width: 155px) {
+      gap: 5px;
     }
   }
 
@@ -123,6 +163,14 @@
       background-color 0.3s, 
       transform 0.2s, 
       box-shadow 0.2s;
+
+      @container (max-width: 250px) {
+        font-size: 12px;
+      }
+      @container (max-width: 195px) {
+        font-size: 8px;
+        min-width: 100%;
+      }
   
     &:hover {
       background-color: #5d9293;

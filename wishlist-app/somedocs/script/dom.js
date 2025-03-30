@@ -140,14 +140,70 @@ export function createFilters() {
   `;
   filterSelect.addEventListener('change', (event) => handleFilterChange(event));
 
-  const sortSelect = document.createElement('select');
-  sortSelect.classList.add('sort-select');
-  sortSelect.innerHTML = `
-    <option value="asc">По возрастанию</option>
-    <option value="desc">По убыванию</option>
-  `;
-  sortSelect.addEventListener('change', (event) => handleSortChange(event));
+  // const sortSelect = document.createElement('select');
+  // sortSelect.classList.add('sort-select');
+  // sortSelect.innerHTML = `
+  //   <option value="asc">По возрастанию</option>
+  //   <option value="desc">По убыванию</option>
+  // `;
+  // sortSelect.addEventListener('change', (event) => handleSortChange(event));
 
-  controls.append(filterSelect, sortSelect);
+  // Создаем контейнер для кнопок
+// Функция для создания кнопок сортировки
+function createSortButtons(celebrant) {
+  // Создаем контейнер для кнопок
+  const sortButtonsContainer = document.createElement('div');
+  sortButtonsContainer.classList.add('sort-buttons-container');
+
+  // Создаем кнопку для сортировки по возрастанию
+  const ascButton = document.createElement('button');
+  ascButton.classList.add('sort-button', 'asc-button');
+  ascButton.innerHTML = '&#8593;'; // Стрелка вверх (↑)
+
+  // Создаем кнопку для сортировки по убыванию
+  const descButton = document.createElement('button');
+  descButton.classList.add('sort-button', 'desc-button');
+  descButton.innerHTML = '&#8595;'; // Стрелка вниз (↓)
+
+  // Добавляем кнопки в контейнер
+  sortButtonsContainer.appendChild(ascButton);
+  sortButtonsContainer.appendChild(descButton);
+
+  // Функция для обработки сортировки
+  function handleSortChange(order) {
+    // Находим все .gift только внутри текущего .celebrant
+    const gifts = Array.from(celebrant.querySelectorAll('.gift'));
+
+    // Сортируем элементы по цене
+    const sortedGifts = gifts.sort((a, b) => {
+      const priceA = parseFloat(a.getAttribute('data-price')) || 0;
+      const priceB = parseFloat(b.getAttribute('data-price')) || 0;
+      return order === 'asc' ? priceA - priceB : priceB - priceA;
+    });
+
+    // Перемещаем отсортированные элементы в DOM
+    const giftsContainer = celebrant.querySelector('.gifts');
+    if (giftsContainer) {
+      sortedGifts.forEach(gift => giftsContainer.appendChild(gift));
+    }
+  }
+
+  // Обработчик кликов для кнопок
+  ascButton.addEventListener('click', () => {
+    // Активируем кнопку "по возрастанию"
+    ascButton.classList.add('active');
+    descButton.classList.remove('active');
+    handleSortChange('asc'); // Вызываем сортировку по возрастанию
+  });
+
+  descButton.addEventListener('click', () => {
+    // Активируем кнопку "по убыванию"
+    descButton.classList.add('active');
+    ascButton.classList.remove('active');
+    handleSortChange('desc'); // Вызываем сортировку по убыванию
+  });
+}
+
+  controls.append(filterSelect, sortButtonsContainer);
   return controls;
 }

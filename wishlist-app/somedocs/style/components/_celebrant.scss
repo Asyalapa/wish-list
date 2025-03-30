@@ -4,6 +4,7 @@
   border: 1px solid $btn-hover-color;
   border-radius: 8px;
   flex: 1;
+  container-type: inline-size;
  
   &__info {
     display: flex;
@@ -28,10 +29,14 @@
     font-weight: 800;
     letter-spacing: 1px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    @container (max-width: 250px) {
+      font-size: 20px;
+    }
   }
 
   &__avatar {
     width: 25vh;
+    max-width: 100%;
     border-radius: 50%;
     object-fit: cover;
   }
@@ -40,5 +45,11 @@
     font-size: 18px;
     font-weight: 600;
     color: $title-color;
+    @container (max-width: 250px) {
+      font-size: 14px;
+    }
+    @container (max-width: 195px) {
+      font-size: 12px;
+    }
   }
 }
