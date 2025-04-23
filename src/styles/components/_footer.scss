@@ -1,0 +1,57 @@
+@use '../base/variables' as *;
+
+.footer {
+  padding: $spacing-md $spacing-lg;
+  width: 100%;
+  border-top: 1px solid $btn-hover-color;
+  text-align: justify;
+
+  &__content {
+    max-width: $tablet-width;
+    margin: 0 auto;
+    padding: $spacing-md;
+    line-height: 1.6;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: $mobile-width;
+  }
+  @media (max-width: $xs-width) {
+    max-width: $xs-width;
+  }
+
+  &__text {
+    font-size: $fs-secondary;
+    font-weight: 600;
+    color: $title-color;
+    line-height: 1.6;
+    margin-bottom: $spacing-md;
+
+    @media (max-width: $mobile-width) {
+      font-size: calc(12 / 16 * 1rem);
+    }
+  }
+
+  &__copyright {
+    font-size: $fs-button;
+    color: $title-color;
+    text-align: center;
+    @media (max-width: $mobile-width) {
+      font-size: calc(10 / 16 * 1rem);
+    }
+
+    a {
+      font-weight: 700;
+      text-decoration: none;
+      color: $btn-hover-color;
+      transition: 
+      color 0.3s ease, 
+      text-decoration 0.3s ease;
+      
+      &:hover {
+        color: initial;
+        text-decoration: underline;
+      }
+    }
+  }
+}

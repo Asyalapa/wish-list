@@ -1,0 +1,27 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.warning {
+  max-width: 600px;
+  border-radius: $border-radius-btn;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  animation: fadeIn 0.5s ease-out, shake 1s ease-in-out;
+
+  @media (max-width: $tablet-width) {
+    max-width: 80%;
+  }
+  @media (max-width: $mobile-width) {
+    max-width: 90%;
+  }
+  @media (max-width: $xs-width) {
+    max-width: 100%;
+  }
+  
+  &.create__warning {
+    text-align: justify;
+    padding: $spacing-xxs $spacing-xs;
+    @include warning-form;
+  }
+}

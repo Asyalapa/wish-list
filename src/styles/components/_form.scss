@@ -1,0 +1,114 @@
+@use '../base/variables' as *;
+
+.form {
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: $spacing-md;
+  }
+
+  &__field {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-xs;
+  }
+
+  &__input {
+    width: 100%;
+    min-width: 200px;
+    padding: $spacing-xs;
+    border: 1px solid $btn-bg-color;
+    border-radius: $border-radius-btn;
+    font-size: $fs-button;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    outline: none;
+    color: $btn-bg-color;
+    letter-spacing: .5px;
+
+    &:focus {
+      border: 1px solid $btn-hover-color;
+    }
+  }
+
+  &__field-name {
+    position: absolute;
+    left: 0;
+    padding: $spacing-xs;
+    pointer-events: none;
+    font-size: 1em;
+    color: $btn-bg-color;
+    text-transform: uppercase;
+    transition: 0.5s;
+
+    @media (max-width: $tablet-width) {
+      font-size: .9em;
+    }
+    @media (max-width: $mobile-width) {
+      font-size: .8em;
+    }
+    @media (max-width: $xs-width) {
+      font-size: .7em;
+    }
+
+    .form__input:not(:placeholder-shown) ~ &,
+    .form__input:focus ~ &
+    {
+      color: $btn-hover-color;
+      transform: translateX($spacing-xs) translateY(-$spacing-xs);
+      font-size: 0.7em;
+      padding: 0 $spacing-xxs;
+      background-color: $bg-color;
+      border-left: 1px solid $btn-bg-color;
+      border-right: 1px solid $btn-bg-color;
+    }
+
+    .create__form .form__input:not(:placeholder-shown) ~ &,
+    .create__form .form__input:focus ~ & {
+      background-color:#e6f2f2;
+    }
+  }
+
+
+  &__error {
+    // position: relative;
+    // color: #ff0000;
+    // background: transparent;
+    // font-size: 0.8em;
+    // padding: 0 $spacing-xxs;
+
+    position: absolute;
+    top: -$spacing-md;
+    right: 0;
+    left: 30%;
+    padding: 0 $spacing-xxs;
+    font-size: 0.8em;
+    border-radius: $border-radius-btn;
+    text-align: center;
+    color: rgb(201, 28, 28);
+    backdrop-filter: blur(5px);
+    background-color: rgba(254, 226, 226, 0.3);
+    border: 1px solid rgba(220, 38, 38, 0.2);
+    box-shadow: 
+      0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    animation: 
+      fadeIn 0.3s ease-out, 
+      shake 0.5s ease-in-out, 
+      opacity 0.3s ease, 
+      max-height 0.3s ease;
+
+    &.hiding {
+      opacity: 0;
+      max-height: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+  }
+}

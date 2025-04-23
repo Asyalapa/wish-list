@@ -1,0 +1,74 @@
+$font-family: "Montserrat", sans-serif;
+
+// Цвета | Colors
+$primery-color: #afcaba;
+$title-color: #333333;
+$main-title-color: #ff9d69;
+
+$bg-card-color: #fad0b9;
+$bg-color: #f9f0e1;
+
+$btn-text-color: $bg-card-color;
+$btn-color: #e2f5ec;
+$btn-hover-color: #5d9293;
+$btn-bg-color: #70b0b1;
+$btn-bg-color-opacity: rgba(112, 176, 177, .5);
+
+$disabled-bg-color: #cccccc;
+$disabled-text-color: #888888;
+
+// Размеры шрифтов | Font sizes
+$fs-main-title: calc(60 / 16 * 1rem);
+$fs-header-title: calc(30 / 16 * 1rem);
+$fs-primary: calc(24 / 16 * 1rem);
+$fs-secondary: calc(18 / 16 * 1rem);
+$fs-button: calc(16 / 16 * 1rem);
+$fs-modal-button: calc(14 / 16 * 1rem);
+$fs-opacity-button: calc(10 / 16 * 1rem);
+
+// Размеры отступов | Spacing
+$spacing-xxl: calc(40 / 16 * 1rem);
+$spacing-lg: calc(20 / 16 * 1rem);
+$spacing-md: calc(12 / 16 * 1rem);
+$spacing-xs: calc(8 / 16 * 1rem);
+$spacing-xxs: calc(4 / 16 * 1rem);
+
+$description-pdg:
+  0
+  calc(20 / 16 * 1rem);
+$btn-pdg: 
+  calc(10 / 16 * 1rem) 
+  calc(14 / 16 * 1rem);
+
+// Размеры рамок | Borders
+$border-radius-btn: calc(6 / 16 * 1rem);
+
+// Размеры макета | Layout
+$xs-width: 320px;
+$mobile-width: 375px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+@keyframes spin-and-cross {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  45% { background-position: 90% 50%; }
+  50% { background-position: 100% 50%; }
+  55% { background-position: 90% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

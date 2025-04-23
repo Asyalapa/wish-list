@@ -1,0 +1,17 @@
+@mixin warning-form {
+  color: rgb(161, 131, 0);
+  background-color: rgba(255, 226, 60, 0.3);
+  border: 1px solid rgba(161, 131, 0, 0.2);
+}
+
+@mixin error-form {
+  color: rgb(201, 28, 28);
+  background-color: rgba(254, 226, 226, 0.3);
+  border: 1px solid rgba(220, 38, 38, 0.2);
+}
+
+@mixin notice-form {
+  color: rgb(44, 202, 129);
+  background-color: rgba(226, 248, 254, 0.3);
+  border: 1px solid rgba(44, 202, 129, 0.2);
+}

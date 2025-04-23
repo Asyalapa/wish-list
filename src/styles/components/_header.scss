@@ -1,0 +1,70 @@
+@use '../base/variables' as *;
+
+.header {
+  padding: $spacing-md 0;
+  width: 100%;
+  border-bottom: 1px solid $btn-hover-color;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $spacing-md;
+    max-width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 $spacing-lg;
+    max-height: calc(45 / 16 * 1rem);
+    
+    @media (max-width: $tablet-width) {
+      max-width: $tablet-width;
+      max-height: calc(38 / 16 * 1rem);
+    }
+    @media (max-width: $mobile-width) {
+      max-width: $mobile-width;
+      max-height: calc(32 / 16 * 1rem);
+    }
+    @media (max-width: $xs-width) {
+      max-width: $xs-width;
+      max-height: calc(28 / 16 * 1rem);
+    }
+  }
+
+  &__logo {
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  &__title {
+    margin: 0;
+    text-align: center;
+    font-size: calc(30 / 16 * 1rem);
+    letter-spacing: 1px;
+    color: transparent; /* Прозрачный текст для градиента */
+    background: linear-gradient(90deg, $btn-bg-color, $title-color,  $main-title-color);
+    background-size: 300% 300%; /* Анимация градиента */
+    -webkit-background-clip: text; /* Градиентный текст */
+    background-clip: text;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 
+               0 0 10px rgba(255, 255, 255, 0.5);
+    animation: gradient-animation 10s ease infinite;
+
+    @media (max-width: $tablet-width) {
+      font-size: calc(24 / 16 * 1rem);
+    }
+    @media (max-width: $mobile-width) {
+      font-size: calc(20 / 16 * 1rem);
+    }
+    @media (max-width: $xs-width) {
+      font-size: calc(18 / 16 * 1rem);
+    }
+  }
+
+  &__toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(10 / 16 * 1rem);
+  }
+}

@@ -1,0 +1,42 @@
+@use '../base/variables' as *;
+
+.main {
+  padding: $spacing-lg;
+  width: 100%;
+  max-width: $desktop-width;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+  @media (max-width: $mobile-width) {
+    max-width: $mobile-width;
+  }
+  @media (max-width: $xs-width) {
+    max-width: $xs-width;
+  }
+
+  &.create {
+    gap: $spacing-lg;
+  } 
+}
+
+.container {
+  display: flex;
+  gap: $spacing-lg;
+  height: 100%;
+  width: 100%;
+  align-items: stretch;
+
+  &.parallel {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  &.sequential {
+    flex-direction: column;
+    width: 100%;
+  }
+}

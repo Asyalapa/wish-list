@@ -1,0 +1,117 @@
+@use '../base/variables' as *;
+
+.welcome-title {
+  margin-bottom: $spacing-xxl;
+  text-align: center;
+  font-size: $fs-main-title; /* Большой размер для главного заголовка */
+  letter-spacing: 2px;
+  color: transparent; /* Прозрачный текст для градиента */
+  background: linear-gradient(90deg, $btn-bg-color, $title-color,  $main-title-color);
+  background-size: 300% 300%; /* Анимация градиента */
+  -webkit-background-clip: text; /* Градиентный текст */
+  background-clip: text;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 
+               0 0 10px rgba(255, 255, 255, 0.5); /* Мягкая тень */
+  animation: gradient-animation 10s ease infinite; /* Анимация градиента */
+  
+  @media (max-width: $tablet-width) {
+      font-size: calc(48 / 16 * 1rem);
+  }
+  @media (max-width: $mobile-width) {
+    margin-bottom: $spacing-md;
+      font-size: calc(36 / 16 * 1rem);
+  }
+  @media (max-width: $xs-width) {
+      font-size: calc(30 / 16 * 1rem);
+      letter-spacing: 1px;
+  }
+}
+
+.welcome-subtitle {
+  margin-bottom: $spacing-lg;
+  text-align: center;
+  font-size: $fs-primary;
+  font-weight: 700;
+  color: $title-color;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: $tablet-width) {
+      font-size: calc(20 / 16 * 1rem);
+  }
+  @media (max-width: $mobile-width) {
+      font-size: calc(18 / 16 * 1rem);
+  }
+}
+
+.welcome-description {
+  text-align: center;
+  font-size: $fs-secondary;
+  color: $title-color;
+  margin-bottom: $spacing-lg;
+  padding: $description-pdg;
+  line-height: 1.8;
+
+  @media (max-width: $tablet-width) {
+      font-size: calc(16 / 16 * 1rem);
+  }
+  @media (max-width: $mobile-width) {
+      font-size: calc(14 / 16 * 1rem);
+  }
+}
+
+.welcome-list {
+  list-style: none;
+  padding: 0;
+  padding: 0 auto;
+  margin-bottom: $spacing-lg;
+  max-width: 800px;
+}
+
+.welcome-item {
+  background: $btn-color;
+  border-radius: $border-radius-btn;
+  padding: $spacing-md $spacing-lg;
+  text-align: justify;
+  box-shadow: 
+    4px 4px 10px rgba(218, 170, 194, 0.2),
+    -4px -4px 10px rgba(255, 230, 242, 0.5);
+  transition: all 0.3s ease;
+  
+  &:not(:last-child) {
+    margin-bottom: $spacing-md; 
+  }
+
+  &:hover {
+    background: $btn-hover-color;
+    color: $bg-color;
+    box-shadow: 
+      6px 6px 15px rgba(218, 170, 194, 0.3),
+      -6px -6px 15px rgba(255, 230, 242, 0.7);
+  }
+
+  &:hover .text-bold {
+    color: initial;
+  }
+
+  @media (max-width: $tablet-width) {
+      padding: 10px;
+  }
+  @media (max-width: $mobile-width) {
+      padding: 8px;
+  }
+}
+
+.welcome-buttons {
+  display: flex;
+  gap: $spacing-md;
+  justify-content: center;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: stretch;
+}
+}
